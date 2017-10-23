@@ -2,7 +2,7 @@ import time
 import Commands
 import Auth
 
-user_login = Auth.Auth_user()
+user_login,disk = Auth.Auth_user()
 while True:
     string = input()
     if string == 'exit':

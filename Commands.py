@@ -1,4 +1,4 @@
-import os
+from os import getcwd,chdir,listdir
 import YaDisk
 
 def helpp():
@@ -8,7 +8,6 @@ def helpp():
            '2)Сменить текущую директорию\n' \
            '3)Вывести список файлов и директорий в дириктории\n' \
            '4)Создать Заметку и быстрый путь к папке в формате: Name-->Path\n' \
-           '5)Авторизация сервера Я.Диск\n' \
            'exit --> выйти из программы'
 
 def path():
@@ -34,4 +33,4 @@ def Favorite():
     f.close()
     return 'Готово'
 
-List = {'.help':helpp,'1':path,'2':chdir,'3':listdir, '4':Favorite, '5':YaDisk.Auth}
+List = {'.help':helpp,'1':path,'2':chdir,'3':listdir, '4':Favorite}
